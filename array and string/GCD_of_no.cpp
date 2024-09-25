@@ -1,0 +1,63 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+// **brute approch : o(min(a,b))**
+int gcd(int a,int b)
+{
+  int ans;
+  int n = min(a, b);
+  for (int i = 1; i <= n;i++)
+  {
+      if(a%i==0 && b%i==0)
+      {
+        ans = i;
+      }
+  }
+  return ans;
+}
+// **recursion approch : o(min(a,b))**
+int gcdRecursion(int a,int b)
+{
+  if(b==0)
+  {
+      return a;
+  }
+  return gcd(b, a % b);
+}
+
+// **euclidean approch : o(log# min(a,b))**
+int gcdbetter(int a,int b)
+{
+    while(a>0 && b>0)
+    {
+      if(a>b)
+      {
+        a = a % b;
+      }
+      else
+      {
+        b = b % a;
+      }
+    }   
+    if(a==0)
+    {
+      return b;
+    }
+    else
+    {
+      return a;
+    }
+}
+
+
+
+int main()
+{
+  int a, b;
+  cin >> a >> b;
+  int ans = gcdRecursion(a, b);
+  // int ans = gcdbetter(a, b);
+  cout << ans << endl;  
+  return 0;
+}

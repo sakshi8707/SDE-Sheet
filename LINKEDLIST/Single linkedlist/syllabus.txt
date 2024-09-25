@@ -1,0 +1,27 @@
+
+
+-----------
+
+
+Representation of linkedList
+Delete Node
+Middle of linkedList
+convert binary no in linkedList
+doubly linkedList
+design Hashset
+''     Hasmap
+Reverse linkedList
+Reverse Nodes in K-GROUP  (extra space and not)
+Merge 2 sorted list     
+Merge k sorted linkedList
+Remove Duplicates from sorted linkedList
+linkedList Cycle (with proof)
+Intersection of 2 list
+Palindroming linkedList
+Remove list
+
+Design Browser HIstory
+LRU CHACHE
+Copy List with Random pointer
+
+
