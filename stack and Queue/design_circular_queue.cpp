@@ -3,6 +3,9 @@
 using namespace std;
 
 
+// **better approch**
+
+
 class MyCircularQueue {
 public:
     vector<int> arr;
